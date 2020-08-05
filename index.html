@@ -4,14 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Bird Yard</title>
   </head>
   <body>
-    zip-code
-    <h1>Enter your ZipCode</h1>
+    <div class="container"></div>
+    <h1> Enter your ZipCode</h1>
     <form>
-      <input type="number" placeholder="Zip Code" id="zip-code" value="34747" />
+      <input type="number" placeholder="Zip Code" id="zip-code"  required/>
       <input type="submit" />
     </form>
+    <section class="results hidden">
+          <h2>Bird results...</h2> 
+          <ul class="results-list">
+          </ul>
+        </section>
+    </div>
+    <script
+        type="text/javascript"
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      ></script>
+      <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
