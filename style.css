@@ -2,5 +2,54 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 .container {
+  text-align: center;
+}
+
+.button,
+#zip-code {
+  border: 2px solid gray;
+  margin: 15px auto;
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 5px 15px;
+  width: 100%;
+  max-width: 350px;
+}
+
+:hover.button {
+  border: 2px solid rgb(58, 58, 58);
+}
+
+#zip-code {
+  text-align: center;
+}
+
+.results-list {
+  list-style: none;
+  padding: 0;
+}
+
+.bird-sighting {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.bird-sighting:hover {
+  box-shadow: 2px 2px 15px rgba(255, 0, 0, 0.75);
+}
+
+.bird-sighting span {
+  flex: 1;
+}
+
+.bird-sighting .sub-location {
+  text-transform: capitalize;
 }

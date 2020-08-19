@@ -5,25 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
-    <title>Bird Yard</title>
+    <title>So Fly</title>
   </head>
   <body>
-    <div class="container"></div>
-    <h1> Enter your ZipCode</h1>
-    <form>
-      <input type="number" placeholder="Zip Code" id="zip-code"  required/>
-      <input type="submit" />
-    </form>
-    <section class="results hidden">
-          <h2>Bird results...</h2> 
-          <ul class="results-list">
-          </ul>
-        </section>
+    <div class="container">
+      <form>
+        <h1>Birds observed near you</h1>
+        <input
+          type="input"
+          placeholder="Enter your zipcode"
+          id="zip-code"
+          required
+        />
+        <input class="button" type="submit" />
+      </form>
+
+      <section class="results hidden">
+        <h2>results...</h2>
+        <p>Number of results <span class="num-of-results"></span></p>
+        <ul class="results-list"></ul>
+      </section>
     </div>
     <script
-        type="text/javascript"
-        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      ></script>
-      <script type="text/javascript" src="index.js"></script>
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    ></script>
+    <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
