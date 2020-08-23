@@ -10,19 +10,26 @@ body {
   text-align: center;
 }
 
+.hidden p {
+  display: none;
+}
+
 .button,
 #zip-code {
-  border: 2px solid gray;
+  border: 2px solid rgb(197, 196, 196);
   margin: 15px auto;
   font-size: 15px;
   border-radius: 5px;
   padding: 5px 15px;
   width: 100%;
   max-width: 350px;
+  transition-duration: 0.3s;
 }
 
 :hover.button {
-  border: 2px solid rgb(58, 58, 58);
+  background-color: #008cba;
+  color: white;
+  border: #008cba;
 }
 
 #zip-code {
@@ -34,6 +41,11 @@ body {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .bird-sighting {
   display: flex;
   justify-content: space-between;
@@ -43,13 +55,16 @@ body {
 }
 
 .bird-sighting:hover {
-  box-shadow: 2px 2px 15px rgba(255, 0, 0, 0.75);
+  box-shadow: 2px 2px 15px #008cba;
 }
 
 .bird-sighting span {
   flex: 1;
 }
 
-.bird-sighting .sub-location {
+.bird-sighting {
   text-transform: capitalize;
+}
+.sub-location {
+  display: none;
 }

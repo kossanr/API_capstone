@@ -61,11 +61,13 @@ function displayResults(responseJson, city, state) {
 
   $(".results").removeClass("hidden");
 
-  $(".results h2").text(`Results for ${city},${state}`);
+  $(".results h2").text(`Results for ${city}, ${state}`);
 
   for (i = 0; i < responseJson.length; i++) {
-    let html = `<li class="bird-sighting"><span class="name">${
+    let html = `<li class="bird-sighting"><span class="name"><a href ="https://en.wikipedia.org/wiki/${
       responseJson[i].comName
+    }_(bird)">${responseJson[i].comName}</a></span><span class="obs-date">${
+      responseJson[i].obsDt
     }</span><span class="location">${
       responseJson[i].locName.split("--")[0]
     }</span>`;
