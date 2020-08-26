@@ -22,11 +22,6 @@ function watchZipForm() {
     } else {
       alert("Please enter Zip Code");
     }
-
-    //gather lat and long from zip code data
-    // res.lat and res.lng. Create variables or an object with these?
-    //or just pass  lat and long data into ebird URL
-    //fetch that specific URL, format into JSON data
   });
 }
 
@@ -54,7 +49,7 @@ function getBirds(res) {
 }
 
 function displayResults(responseJson, city, state) {
-  console.log(responseJson);
+  // console.log(responseJson);
 
   $(".results-list").html("");
   $(".num-of-results").text(responseJson.length);
