@@ -6,7 +6,7 @@ So Fly is an add that allows user's to search for recently seen and recorded bir
 
 ![Main Page](mainpage.jpg)
 ![results list](results.jpg)
-![Hover results](hover_results.jpg)
+![Hover results](hover.jpg)
 ![Redirect to Wikipedia](wiki.jpg)
 
 # # Technologies used
