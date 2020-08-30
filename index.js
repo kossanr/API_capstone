@@ -5,16 +5,13 @@ const zipAPIKEY =
 const birdAPIKey = "r0vtns5mffqv";
 
 function watchZipForm() {
-  //watch for submit of zip code
   $("form").submit((e) => {
     e.preventDefault();
     const zipCode = $("#zip-code").val();
     if (zipCode !== "") {
-      //if the zipCode is not blank
       const zipURL = `https://www.zipcodeapi.com/rest/${zipAPIKEY}/info.json/${zipCode}/degrees`;
-      //get URL that contains my API key and val of #zip-code
       fetch(zipURL)
-        .then((res) => res.json()) //formats into json
+        .then((res) => res.json())
         .then((res) => {
           getBirds(res);
         })
@@ -49,8 +46,6 @@ function getBirds(res) {
 }
 
 function displayResults(responseJson, city, state) {
-  // console.log(responseJson);
-
   $(".results-list").html("");
   $(".num-of-results").text(responseJson.length);
 
