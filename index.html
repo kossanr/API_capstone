@@ -5,24 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://img.icons8.com/color/100/000000/woodpecker.png"
+    />
+
     <title>So Fly</title>
   </head>
   <body>
     <div class="container">
       <form>
         <h1>So Fly</h1>
+
         <p class="description">Find birds recently observed near you</p>
         <input
-          type="input"
+          type="number"
           placeholder="Enter a zipcode"
           id="zip-code"
+          aria-label="Enter a zipcode"
           required
         />
-        <input class="button" type="submit" />
+        <input class="button" type="submit" value="Submit" />
       </form>
 
       <section class="results hidden">
-        <h2></h2>
         <p>Number of results <span class="num-of-results"></span></p>
 
         <ul class="results-list"></ul>
@@ -32,7 +39,6 @@
       type="text/javascript"
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     ></script>
-    <script type="text/javascript" 
-    src="index.js"></script>
+    <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
